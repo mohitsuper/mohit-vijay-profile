@@ -1,0 +1,242 @@
+ *{
+   margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'rubik',sans-serif;
+  transition: 0.5s;
+  border-radius: .5rem;
+  text-transform: none;
+  text-decoration: none;
+}
+:root{
+  --green:#00e77e;
+  --white: #fff;
+  --light-white:#aaa;
+  --black:#3d3d3d;
+  --light-bg:#494950;
+  --creem :#C6AA15;
+}
+selection{
+  background: var(--white);
+  color:var(--black);
+}
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top:8rem;
+}
+::-webkit-scrollbar{
+  height: 5rem;
+  width: 1rem;
+  
+}
+::-webkit-scrollbar-track{
+  background:transparent;
+}
+::-webkit-slider-thumb{
+  background: var(--creem);
+  border-radius: 5rem;
+}
+
+.btu{
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.btu:hover {
+  color: crimson;
+  background: none;
+}
+body{
+  background: var(--black);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+  color :#000;
+  position: relative;
+  top:0;
+  margin-top: 0;
+  
+  
+}
+section{
+  max-width:120rem;
+  margin:0 auto;
+  padding:2rem;
+  padding-right: .9rem;
+  
+}
+.header .flex{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.header{
+position: flex;
+top:0;
+left:0;
+right: 0;
+z-index: 1000;
+background-color:var(--light-bg);
+position:fixed;
+
+}
+
+.header .flex .navbar{
+    font-size: 2.5rem;
+    color:var(--black);
+}
+.header .flex .logo{
+  font-weight: 400;
+  font-size: 3rem;
+  color:var(--white);
+}
+
+.header .flex .logo span{
+  color:var(--green);
+}
+
+.header .flex .navbar a{
+  margin-left:2rem;
+  color:var(--light-white);
+  font-size: 1.3rem;
+  transition: 0.5s color;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  
+}
+.header .flex .navbar .menu{
+  display: none;}
+
+
+
+.header .flex .navbar a:hover{
+  color:var(--green);
+}
+
+
+#menu-btu{
+  display:none;
+  cursor:pointer;
+  font-size: 5rem;
+  color:var(--white);
+}
+
+/*------------home page title css------*/
+/*.home{
+  width:100%;
+  height: fit-content;
+  background: var(--black);
+  background-image: url("images/phone-background1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+  color :#000;
+  position: relative;
+  top:0;
+  margin-top: 0;
+}*/
+
+.home {
+  display: flex;
+  background: url("img/phone-background1.png") no-repeat center;
+  background-color: #111;
+  height: 100vh;
+  color: #fff;
+  
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+.home .max-width {
+  width: 100%;
+  display: flex;
+}
+.home-content{
+  top:50rem;
+  position: absolute;
+  left:5%;
+}
+.home .max-width .row {
+  margin-right: 0;
+}
+.home .home-content .text-1 {
+  font-size: 27px;
+}
+.home .home-content .text-2 {
+  font-size: 75px;
+  color:#2F8C44;
+  font-weight: 600;
+  margin-left: -3px;
+}
+.home .home-content .text-3 {
+  font-size: 40px;
+  margin: 5px 0;
+}
+.home .home-content .text-3 span {
+  font-weight: 500;
+    color:var(--light-white);
+
+}
+.home .home-content a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.home .home-content a:hover {
+  color: crimson;
+  background: none;
+}
+
+/*-----------about page css------------*/
+.about .row{
+  display :flex;
+  align-items: center;
+  gap:1.5rem;
+  flex-wrap: wrap;
+}
+.about .row .img{
+  flex:1 1 40rem;
+}
+.about .row .img img{
+  width: 100%;
+}
+.about  .row .cap{
+  flex:1 1 40rem;
+  text-align: center;
+}
+.about  .row  .cap h3{
+  font-size: 3rem;
+  color:var(--white);
+  font-weight: 500;
+}
+.about  .row  .cap h3 span{
+  color:var(--green);
+}
+
+.about .row .cap p{
+  padding:1rem 0;
+  line-height: 2;
+  font-size: 1.8rem;
+  color:var(--light-white);
+}
