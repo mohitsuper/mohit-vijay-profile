@@ -184,7 +184,7 @@ position:fixed;
 }
 .home .home-content .text-3 {
   font-size: 4rem;
-  margin: .3rem 0;
+  margin: .2rem 0;
 }
 .home .home-content .text-3 span {
   font-weight: 500;
@@ -199,7 +199,7 @@ position:fixed;
   padding: 1.2rem 3.6rem;
   margin-top: 2rem;
   font-weight: 400;
-  border-radius: 6rem;
+  border-radius: .6rem;
   border: 2rem solid crimson;
   transition: all 0.3s ease;
 }
