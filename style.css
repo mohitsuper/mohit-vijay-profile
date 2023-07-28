@@ -72,6 +72,11 @@ body{
   
   
 }
+
+.heading{
+   width:100%;
+    text-align: center;
+}
 section{
   max-width:120rem;
   margin:0 auto;
