@@ -292,10 +292,11 @@ position:fixed;
 }
 
 .navbar{
-  width: 20rem;
-  height: 100vh;
+  width: 100%;
+  height: 50vh;
   background:var(--light-bg);
   top:0;
+  text-align: center;
   right: -30rem;
   position: fixed;
   padding-top:5rem;
