@@ -349,6 +349,11 @@ margin-top:0;
 
 /* exploare page and css */
 /*-----------about page css------------*/
+.about{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .about .row{
   display :flex;
   align-items: center;
@@ -383,7 +388,81 @@ font-weight: 700;
 }
 
 
+/* mywork page css */
+#mywork{
+  padding:2rem 2rem  2rem 2rem;
+  margin:auto;
+}
 
+
+.heading{
+
+  font-size:4rem;
+  font-weight: 100;
+}
+#service{
+  display: grid;
+  margin-top: 5rem;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit,minmax(40rem, 3fr));
+  
+}
+
+
+.service-list {
+  align-items: center;
+  justify-content: center;
+  background:var(--white);
+  padding:3rem;
+  box-shadow: 0rem 0rem 1rem .1rem #dddeee;
+  border-radius: 1rem;
+  transition:background 0.5s,transform 0.5s;
+    overflow: hidden;
+      font-size: 1rem;
+
+
+    
+}
+.service-list h2{
+  text-align: center;
+  font-size:3rem;
+  font-weight: 700;
+  color: var(--brown);
+}
+.service-list  p{
+  text-align: center;
+  color:var(--light-bg);
+  font-weight: 600;
+    font-size:1.8rem;
+
+  
+}
+.service-list ion-icon{
+  font-size:4rem;
+ position: relative;
+ top:1.5rem;
+ margin-bottom: 2rem;
+ left:45%;
+  color:var(--light-bg);
+}
+.service-list h1{
+  font-size: 50rem;
+  color:#fff;
+}
+.service-list  a  ion-icon{
+  color:var(--brown);
+  text-align: left;
+  font-size: 3rem;
+  
+}
+.service-list:hover{
+ transform: translatex(-10rem);
+  transform: scale(1.02);
+  box-shadow: 0rem 0rem 1rem .2rem #ddd;
+    
+
+}
+/* mywork page css end */
 
 /*--------media quarey ----------------*/
 @media (max-width:990px) {
