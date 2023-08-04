@@ -400,16 +400,16 @@ font-weight: 700;
 
 
 .heading{
-
+  margin: 2.5rem 0rem 2.5rem 0rem;
   font-size:4rem;
   font-weight: 600;
   color:var(--light-white);
 }
 #service{
   display: grid;
-  margin-top: 5rem;
+  margin: 2.5rem 0rem 2.5rem 0rem;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit,minmax(40rem, 3fr));
+  grid-template-columns: repeat(auto-fit,minmax(37rem, 3fr));
   
 }
 
