@@ -258,7 +258,8 @@ position:fixed;
 
 .home .cantener p{
   font-size: 2rem;
-  color: #333;
+  font-weight: 600;
+  color:var(--brown);
 }
 
 .home .cantener a{
@@ -274,7 +275,64 @@ p {
   color: #aaa;
 }
 
+/* explore page css */
+.explor {
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
 
+.explor .box{
+  display: flex;
+  padding: 2rem;
+  background: #eee;
+}
+.explor .box h1{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--brown);
+}
+.explor .swiper {
+flex:1 1 80rem;
+width: 100%;
+}
+
+.explor  .swiper{
+  width: 100%;
+
+}
+
+
+.explor  .swiper .swiper-wrapper{
+    width: 100%;
+
+}
+.explor .swiper .swiper-wrapper .swiper-slide{
+  width: 100%;
+
+}
+
+
+.explor  .swiper .swiper-wrapper .swiper-slide img{
+border-radius: 30%;
+position: relative;
+border:none;
+height:18rem;
+width: 100%;
+margin-top:0;
+
+}
+
+
+
+.logo {
+  display: inline-block;
+}
+
+/* exploare page and css */
 /*-----------about page css------------*/
 .about .row{
   display :flex;
