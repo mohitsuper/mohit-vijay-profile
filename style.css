@@ -7,9 +7,9 @@
   padding:0;
   box-sizing: border-box;
     font-family: "poppies", sans-serif;
-
+text-transform: capitalize;
   border-radius: .5rem;
-  text-transform: none;
+  
   text-decoration: none;
 }
 :root{
@@ -20,6 +20,7 @@
   --light-bg:#494950;
   --creem :#C6AA15;
   --brown: #59504c;
+  --box-shadow:  0rem 0rem 1rem .1rem #ddd;
 }
 selection{
   background: var(--white);
@@ -181,7 +182,7 @@ position:fixed;
 
 
 .home .links {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color:#eee;
   height: 40rem;
   
@@ -190,13 +191,13 @@ position:fixed;
 
 
 .home .links a{
-  font-size: 2.5rem;
+  font-size: 3rem;
   color:#333;
   height: 6rem;
   position: relative;
   top:10rem;
   left:1rem;
-
+transition: 0.5s;
   margin-bottom: 2rem;
   width:6rem;
   border-radius: 50%;
@@ -263,8 +264,10 @@ position:fixed;
 }
 
 .home .cantener a{
-  width:20rem;
-  border-radius: 20rem;
+  width:30rem;
+  /* background: var(--green);
+  border: none; */
+  border-radius: 2rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -285,14 +288,18 @@ p {
   padding: 2rem;
   justify-content: center;
   align-items: center;
+  gap:1rem;
 }
 
 .explor .box{
+  text-align: center;
   display: flex;
   padding: 2rem;
+  flex:1 1 20rem;
   background: #eee;
 }
 .explor .box h1{
+  text-align: center;
   font-size: 2rem;
   font-weight: 600;
   color: var(--brown);
@@ -354,8 +361,8 @@ margin-top:0;
 }
 .about  .row  .cap h3{
   font-size: 3rem;
-  color:var(--white);
-  font-weight: 500;
+  color:var(--brown);
+  font-weight: 600;
 }
 .about  .row  .cap h3 span{
   color:var(--green);
@@ -397,6 +404,10 @@ margin-top:0;
   margin: 2rem;
 }
   
+.explor .box{
+  width: 100%;
+  text-align: center;
+}
 
 .navbar{
   display:block;
@@ -428,6 +439,37 @@ padding-top: 2rem;
   cursor: pointer;
   display: block;
 }
+
+
+.home{
+  display: flex;
+  flex-direction: columns;
+  width:100%;
+}
+
+.home .cantener{
+  top:0;
+  max-height: 35rem;
+}
+
+
+.home {
+  margin-right: 0;
+
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+.home .links{
+  position: absolute;
+  top:4rem;
+  left:1.5rem;
+}
+
+
 .count .box-canter {
   margin-bottom: 2rem;
  margin-top:2rem; 
