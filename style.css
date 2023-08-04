@@ -597,7 +597,10 @@ padding-top: 2rem;
     flex-wrap: wrap;
     
   }
-  
+
+  .home .cantener{
+  max-height: 25rem;
+}  
 
 
 }
