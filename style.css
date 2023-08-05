@@ -380,6 +380,7 @@ margin-top:0;
 }
 .about .row .img img{
   width: 100%;
+  height: 100%;
 }
 .about  .row .cap{
   flex:1 1 40rem;
@@ -397,7 +398,7 @@ margin-top:0;
 .about .row .cap p{
   padding:1rem 0;
   line-height: 2;
-  font-size: 2.5rem;
+  font-size: 2rem;
 font-weight: 700;
   color:var(--light-bg);
 }
@@ -480,11 +481,19 @@ display: flex;
 /* mywork page css end */
 
 /*------project sections page css-----*/
-.project{
+.projects{
   display: flex;
+  flex-direction: column;
   width:100%;
+  margin:auto;
+  padding:0rem 2.5rem  0rem 2.5rem;
 }
 
+.projects span{
+  font-size: 1.5rem;
+  width: 100%;
+  color: #333;
+}
 .project-main{
   display: grid;
   grid-template-columns: repeat(2,1fr);
@@ -492,15 +501,49 @@ display: flex;
 }
 .project-main .project-box{
   width:100%;
+  background: #fff;
   display: flex;
     box-shadow: 0rem 0rem 1rem .1rem #ccc;
-
+gap: 3rem;
+padding: 1rem;
+transition: 0.5s;
   flex-direction: column;
 }
+
+.project-main .project-box:hover{
+transform: scale(1.02);
+}
+  .project-main .project-box .img{
+    display:flex;
+    flex:0 0 60rem;
+  }
+
 .project-main .project-box .img img{
   width:100%;
 }
+.project-main .project-box .text-box{
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  display: flex;
+  flex:0 0 30rem;
+  flex-direction: column;
+}
 
+
+
+
+.project-main .project-box .text-box span{
+  color: var(--light-bg);
+  font-weight: 600;
+}
+
+
+.project-main .project-box .text-box p{
+  color:#777;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 /*--project sections page css end-----*/
 
 /*--------media quarey ---------------*/
