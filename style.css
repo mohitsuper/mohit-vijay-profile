@@ -432,8 +432,9 @@ font-weight: 700;
   transition:background 0.5s,transform 0.5s;
     overflow: hidden;
       font-size: 1rem;
-
-
+      text-align: center;
+      flex-direction: column;
+display: flex;
     
 }
 .service-list h2{
@@ -455,7 +456,7 @@ font-weight: 700;
  position: relative;
  top:1.5rem;
  margin-bottom: 2rem;
- left:45%;
+ left:0%;
   color:var(--light-bg);
 }
 .service-list h1{
