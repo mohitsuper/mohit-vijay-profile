@@ -599,7 +599,7 @@ left: 2rem;
         border-radius: .5rem;
       background-color:#EEE;
       font-size:1.8rem;
-      color:var(--white);
+      color:var(--light-bg);
       padding: 1.4rem;
       outline: none;
       border: none;
