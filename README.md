@@ -4,4 +4,4 @@ Hii Every One My Name Mohit Vijay Form India This Year 2023 Compleat Bca First Y
 
 😇😇😇😇
 
-mohitvijay.netlify.app
+https://mohitvijay.netlify.app
