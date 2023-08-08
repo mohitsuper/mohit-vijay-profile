@@ -557,7 +557,7 @@ transform: scale(1.02);
        .contact{
         margin-top: 0;
         display: flex;
-        
+       padding: 2rem; 
         flex-direction: row;
         gap:1rem;
       }
@@ -568,7 +568,7 @@ transform: scale(1.02);
       
       .contact  .map {
         width: 100%;
-        flex:1 1 40rem;
+        flex:1 1 50rem;
         position: relative;
         /* margin-top: 0;
         margin-bottom: 0;
@@ -595,7 +595,7 @@ left: 2rem;
       .contact form .box{
         width:100%;
         margin-top: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
         border-radius: .5rem;
       background-color:#EEE;
       font-size:1.8rem;
@@ -624,13 +624,17 @@ color: #aaa;
         font-size: 1.8rem;
         
       }
-      .contact .form .radio .rk{
-        display: flex;
-      }
-      .contact .form .radio .rk input {
-        font-size: 9rem;
+      
+      .contact form .btu-box{
+        margin-top: 1rem;
+        gap: 1rem;
       }
       
+      .contact form .btu-box .btu{
+        margin: 0;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+      }
    /* ----contect as page css --------- *
 /* ---footer page css---------- */
 .footer .share{
