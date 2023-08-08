@@ -145,7 +145,7 @@ position:fixed;
 .header .flex .navbar .menu{
   display: none;}
 
-a.active{
+  nav a.active{
   color:var(--brown);
 }
 
