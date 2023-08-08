@@ -137,18 +137,20 @@ position:fixed;
   font-size: 1.3rem;
   transition: 0.5s color;
   text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: capitalize;
   
 }
 .header .flex .navbar .menu{
   display: none;}
 
-
+a.active{
+  color:var(--brown);
+}
 
 .header .flex .navbar a:hover{
-  color:var(--green);
+  color:var(--brown);
 }
 
 
@@ -545,6 +547,119 @@ transform: scale(1.02);
   font-size: 1.5rem;
 }
 /*--project sections page css end-----*/
+       /* ----contect as page css --------- */
+#contect{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+       .contact{
+        margin-top: 0;
+        display: flex;
+        
+        flex-direction: row;
+        gap:1rem;
+      }
+      .contact .map{
+        display: flex; 
+        flex:0 0  40rem;
+      }
+      
+      .contact  .map {
+        width: 100%;
+        flex:1 1 40rem;
+        position: relative;
+        /* margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 0;
+        padding-bottom: 0; */
+      }
+      
+      .contact .map  iframe{
+          
+          width: 100%;
+      
+      }
+      
+      /* .contact  .row .contact-no{
+position: absolute;
+bottom: 2rem;
+left: 2rem;
+      } */
+      
+      .contact form{
+        flex:1 1 40rem;
+      }
+      
+      .contact form .box{
+        width:100%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border-radius: .5rem;
+      background-color:#EEE;
+      font-size:1.8rem;
+      color:var(--white);
+      padding: 1.4rem;
+      outline: none;
+      border: none;
+      }
+      
+      
+      
+      
+      
+      .contact  form span{
+        font-size:1.6rem;
+        color:var(--brown);
+        font-weight: 600;
+      }
+
+      .contact form .radio{
+        padding: 2rem 0rem 2rem 0rem;
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+color: #aaa;
+        font-size: 1.8rem;
+        
+      }
+      .contact .form .radio .rk{
+        display: flex;
+      }
+      .contact .form .radio .rk input {
+        font-size: 9rem;
+      }
+      
+   /* ----contect as page css --------- *
+/* ---footer page css---------- */
+.footer .share{
+  margin-top:1rem;
+   background: #eee;
+   padding-top: 1rem;
+   text-align: center;
+   padding-bottom: 1rem;
+    padding: 1.5rem;
+   
+}
+.footer .share a{
+ width: 4.5rem;
+ height: 4.5rem;
+ line-height: 4.5rem;
+ color:var(--black);
+ border-radius: 50%;
+ font-size: 4rem;
+
+
+}
+.footer .share h4{
+ color:var(--black);
+}
+
+.footer .share h4 span{
+color:var(--creem);}
+
+ /* ---footer page css end---------- */
 
 /*--------media quarey ---------------*/
 @media only screen and (max-width:990px) {
