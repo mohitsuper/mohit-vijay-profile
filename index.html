@@ -38,9 +38,14 @@
           <a href="#contect">contact</a>
           <ion-icon name="close-outline" onclick="closemenu()" id="menu-btu"></ion-icon>
 
-          <div class=""></div>
-      </nav>
-     <ion-icon name="menu-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
+        </nav>
+        
+        <div class="mood" id="mood">
+          <ion-icon name="sunny-outline" onclick="day()"></ion-icon>
+          <ion-icon name="moon-outline" onclick="night()"></ion-icon>        
+        </div>
+        
+       <ion-icon name="menu-outline" onclick="openemenu()" id="menu-btu"></ion-icon>
 
     </section>
     
@@ -317,6 +322,20 @@ var sidemeu = document.getElementById('sidemenu');
 
   }
 </script>
+
+<script>
+  var body = document.getElementsByTagName("body")[0];
+
+  function night(){
+    body.style.background = "#333";
+  }
+
+  function day(){
+    body.style.background = "#fff";
+  }
+
+</script>
+
 <script>
 
       var swiper = new Swiper(".explors", {

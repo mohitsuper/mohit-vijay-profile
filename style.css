@@ -74,7 +74,7 @@ body{
   position: relative;
   top:0;
   margin-top: 0;
-  
+  transition: 0.5s;
   
 }
 
@@ -145,7 +145,7 @@ position:fixed;
 .header .flex .navbar .menu{
   display: none;}
 
-  nav a.active{
+  .header .flex .navbar a.active{
   color:var(--brown);
 }
 
@@ -153,6 +153,18 @@ position:fixed;
   color:var(--brown);
 }
 
+ .header .flex  .mood{
+  display: flex;
+  flex-direction: row;
+  gap:2rem;
+  margin-right: 2rem;
+}
+
+.mood ion-icon{
+  font-size: 3rem;
+  font-weight: 600;
+  color: #111;
+}
 
 #menu-btu{
   display:none;
