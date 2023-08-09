@@ -21,6 +21,12 @@ text-transform: capitalize;
   --brown: #59504c;
   --box-shadow:0rem 0rem 1rem .1rem #ddd;
 }
+
+.dark{
+  --main-bg: #333;
+  --main-color:#fff;
+}
+
 selection{
   background: var(--white);
   color:var(--black);
@@ -177,37 +183,24 @@ position:fixed;
 
   .homes{
     margin: 2.5rem 0rem 2.5rem 0rem;
-
+padding-top:6rem;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
 }
 .home{
       margin-right: 0;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+display: grid;
+grid-template-columns: 0.2fr 1fr 1fr;
   width:100%;
   gap:2rem;
 }
 
 .home .cantener{
   display: flex;
-  flex:1 1 40rem;
-  position:relative;
-  top:13rem;
-  background: var(--white);
-  width:100%;
- /* height:28.6rem;*/
- height: fit-content;
-    /* background:var(--white); */
-  padding-left:3rem;
-  max-height: 32rem;
-  flex-direction: wrap;
+  justify-content: center;
+  align-items: left;
   flex-direction: column;
-  
 }
 
 
@@ -216,7 +209,10 @@ position:fixed;
 .home .links {
   font-size: 3rem;
   color:#eee;
-  height: 40rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   
 }
 
@@ -226,17 +222,11 @@ position:fixed;
   font-size: 3rem;
   color:#333;
   height: 6rem;
-  position: relative;
-  top:15rem;
-  left:1rem;
 transition: 0.5s;
-  margin-bottom: 2rem;
   width:6rem;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
+
 
 .home .links a:hover{
       box-shadow: 0rem 0rem 1rem .1rem #ddd;
@@ -736,38 +726,11 @@ padding-top: 2rem;
   display: block;
 }
 
-.homes{
-  display: flex;
-  width: 100%;
-}
-.home{
-  display: flex;
-  /* flex-direction: columns; */
-  width:100%;
-}
 
-.home .cantener{
-  top:0;
-  /* max-height: 35rem; */
-}
+ 
 
 #service{
   grid-template-columns: repeat(2,1fr);
-}
-.home {
-  margin-right: 0;
-
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 2rem;
-}
-
-.home .links{
-  position: absolute;
-  top:10rem;
-  left:1.5rem;
 }
 
 
@@ -796,12 +759,40 @@ padding-top: 2rem;
     width: 100%;
     /* flex-direction: column; */
     flex-wrap: wrap;
-    
   }
+    
+.homes{
+  display: flex;
+  width: 100%;
+}
+.home{
+  display: flex;
+  flex-direction: columns;
+  width:100%;
+}
 
-  .home .cantener{
-  max-height: 25rem;
+.home .cantener{
+  top:0;
+} 
+
+
+.home {
+  margin-right: 0;
+
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2rem;
+}
+
+.home .links{
+position: absolute;
+top:20rem;
+left: 2rem;
 }  
+
+  
 
 .home .links a{
   top:10rem;

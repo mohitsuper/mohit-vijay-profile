@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .home{
+            display: flex;
+            margin: 2rem 0rem 2rem 0rem;
+            width: 100%;
+           height:30rem;
+        }
+
+        .homes{
+           display:grid;
+           grid-template-columns: 0.2fr 1fr 1fr ;
+           width: 100%;
+           grid-gap: 1rem;
+        }
+        .homes .box{
+            width: 100%;
+            background: #000;
+        }
+
+        @media only screen and (max-width:540px){
+            .homes{
+                grid-template-columns: 0.2fr 1fr ; 
+
+            }
+            .span{
+                grid-column: -1/1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <section class="home">
+        <div class="homes">
+            <div class="box">
+                
+        </div>
+        <div class="box"></div>
+        <div class="box span"></div>
+        </div>
+    </section>
+</body>
+</html>
