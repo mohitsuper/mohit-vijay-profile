@@ -195,6 +195,29 @@
   
 </section>
 
+
+  <section id="memories" class=" memories section-mg">
+    <h1 class="heading">best memories</h1>
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+    <img src="img/mohit/nee/1.jpg" alt="img/IMG1.JPG">
+      </div>
+     <div class="swiper-slide">
+    <img src="img/mohit/nee/2.jpg" alt="img/IMG1.JPG">
+
+      </div>
+      <div class="swiper-slide">
+    <img src="img/mohit/nee/3.jpg" alt="img/IMG1.JPG">
+      </div>
+
+      </div>
+          
+    </div>
+
+  </section>
+
 <section class="projects" id="project">
   <h1 class="heading">best projects</h1>
   
@@ -366,6 +389,60 @@ var sidemeu = document.getElementById('sidemenu');
             slidesPerView: 5,
 
           },
+        },
+      });
+    </script>
+    
+<script>
+
+      var swiper = new Swiper(".memory", {
+        
+        spaceBetween: 30,
+    /*  autoplay: {
+       delay: 1000,
+      disableOnInteraction:false,
+        loop: true,
+      
+        },*/
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        
+        breakpoints: {
+          540: {
+            slidesPerView:1,
+            
+          },
+          768: {
+            slidesPerView: 1,
+            
+          },
+          1024: {
+            slidesPerView: 1,
+
+          },
+        },
+      });
+    </script>
+
+<script>    
+var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 5,
+       autoplay: {
+          delay: 2900,
+          direction: 'vertical',
+          disableOnInteraction: false,
+          loop:true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

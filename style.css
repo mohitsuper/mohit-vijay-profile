@@ -27,6 +27,9 @@ text-transform: capitalize;
   --main-color:#fff;
 }
 
+.section-mg{
+  margin: 2rem 0rem 2rem 0rem;
+}
 selection{
   background: var(--white);
   color:var(--black);
@@ -344,7 +347,7 @@ height: 100%;
     width: 100%;
 gap: 1rem;
 }
-.explor .swiper .swiper-wrapper .swiper-slide{
+.explor  .swiper .swiper-wrapper .swiper-slide{
   width: 100%;
 
 }
@@ -549,6 +552,30 @@ transform: scale(1.02);
   font-size: 1.5rem;
 }
 /*--project sections page css end-----*/
+
+/*------merories section css--------*/
+.memories{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  
+}
+.memories .mySwiper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.memory .swiper-wrapper{
+  width: 100%;
+}
+.mySwiper .swiper-wrapper .swiper-slide img{
+  width: 100%;
+  
+}
+
+
+/*------merories section css end--------*/
+
        /* ----contect as page css --------- */
 #contect{
   display: flex;
@@ -797,11 +824,13 @@ left: 2rem;
 .home .links a{
   top:10rem;
 }
-.explor  .swiper .swiper-wrapper .swiper-slide img{
-  height: 25rem;
+.explor .swiper-wrapper .swiper-slide img{
+  /*height: 25rem;*/
+  width: 100%;
 }
 .project-main{
   grid-template-columns: repeat(1,1fr);
 }
+
 
 }
